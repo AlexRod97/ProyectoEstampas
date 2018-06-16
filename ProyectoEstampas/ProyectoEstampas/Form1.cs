@@ -12,6 +12,9 @@ namespace ProyectoEstampas
 {
     public partial class Form1 : Form
     {
+        Equipo equipos = new Equipo();
+        List<Equipo> estampas = new List<Equipo>(); 
+
         public Form1()
         {
             InitializeComponent();
