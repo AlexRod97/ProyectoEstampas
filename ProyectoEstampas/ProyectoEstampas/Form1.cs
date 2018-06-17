@@ -25,11 +25,13 @@ namespace ProyectoEstampas
             for (int i = 0; i < 8; i++)
             {
                 dataGridView2[0, i].Value = i;
+                dataGridView2[0, i].Style.BackColor = Color.Red;
             }
 
             for (int i = 0; i < 12; i++)
             {
                 dataGridView2[1, i].Value = i + 8;
+                dataGridView2[1, i].Style.BackColor = Color.Red;
             }
 
             int count = 20;
@@ -39,15 +41,76 @@ namespace ProyectoEstampas
                 for (int j = 0; j < 20; j++)
                 {
                     dataGridView2[i, j].Value = count;
+                    dataGridView2[i, j].Style.BackColor = Color.Red;
                     count++;
                 }
             }
 
         }
 
-        public void UpdateForm()
+        public void UpdateForm(int numeroEstampa, int cantEstampas)
         {
-            
+            for (int i = 0; i < 8; i++)
+            {
+                if (numeroEstampa.ToString() == dataGridView2[0,i].Value.ToString() && cantEstampas != 0)
+                {
+                    dataGridView2[0, i].Style.BackColor = Color.Green;
+                }
+                
+            }
+
+            for (int i = 0; i < 12; i++)
+            {
+
+                if (numeroEstampa.ToString() == dataGridView2[1, i].Value.ToString() && cantEstampas != 0)
+                {
+                    dataGridView2[1, i].Style.BackColor = Color.Green;
+                }
+            }
+
+            for (int i = 2; i < 34; i++)
+            {
+                for (int j = 0; j < 20; j++)
+                {
+                    if (numeroEstampa.ToString() == dataGridView2[i, j].Value.ToString() && cantEstampas != 0)
+                    {
+                        dataGridView2[i, j].Style.BackColor = Color.Green;
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void UpdateRemove(int numeroEstampa, int cantEstampas)
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                if (numeroEstampa.ToString() == dataGridView2[0, i].Value.ToString() && cantEstampas == 0)
+                {
+                    dataGridView2[0, i].Style.BackColor = Color.Red;
+                }
+
+            }
+
+            for (int i = 0; i < 12; i++)
+            {
+
+                if (numeroEstampa.ToString() == dataGridView2[1, i].Value.ToString() && cantEstampas == 0)
+                {
+                    dataGridView2[1, i].Style.BackColor = Color.Red;
+                }
+            }
+
+            for (int i = 2; i < 34; i++)
+            {
+                for (int j = 0; j < 20; j++)
+                {
+                    if (numeroEstampa.ToString() == dataGridView2[i, j].Value.ToString() && cantEstampas == 0)
+                    {
+                        dataGridView2[i, j].Style.BackColor = Color.Red;
+                    }
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -73,12 +136,14 @@ namespace ProyectoEstampas
             {
                 added=  album[numero];
                 added.CantidadObtenida = added.CantidadObtenida + 1;
+                UpdateForm(numero, added.CantidadObtenida);
             }
             else
             {
                 added.Numero = numero;
                 added.CantidadObtenida = 1; 
                 album.Add(numero, added);
+                UpdateForm(numero, added.CantidadObtenida);
             }
         }
 
@@ -99,11 +164,12 @@ namespace ProyectoEstampas
 
                 if (added.CantidadObtenida == 0)
                 {
-
+                    UpdateRemove(numero, 0);
                 }
                 else
                 {
                     added.CantidadObtenida = added.CantidadObtenida - 1;
+                    UpdateRemove(numero, added.CantidadObtenida);
                 }
                 
             }
