@@ -13,7 +13,7 @@ namespace ProyectoEstampas
 {
     public partial class Form1 : Form
     {
-        StreamWriter Archivo = new StreamWriter("C:\\Test.txt");
+        StreamWriter Archivo = new StreamWriter("archivo.txt");
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +21,8 @@ namespace ProyectoEstampas
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Archivo.Write(txtEscribir.Text);
+            Archivo.Write(txtEscribir.Text + ",");
+            txtEscribir.Clear();
         }
 
         private void btnExportar_Click(object sender, EventArgs e)
