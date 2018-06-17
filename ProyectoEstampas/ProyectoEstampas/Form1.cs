@@ -37,7 +37,7 @@ namespace ProyectoEstampas
 
             int count = 20;
 
-            for (int i = 2; i < 35; i++)
+            for (int i = 2; i < 34; i++)
             {
                 for (int j = 0; j < 20; j++)
                 {
@@ -48,6 +48,14 @@ namespace ProyectoEstampas
                         count++;
                     }
                 }
+            }
+            count = 660; 
+
+            for (int i = 0; i < 10; i++)
+            {
+                dataGridView2[34, i].Value = count;
+                dataGridView2[34, i].Style.BackColor = Color.Red;
+                count++;
             }
 
         }
@@ -65,29 +73,29 @@ namespace ProyectoEstampas
 
             for (int i = 0; i < 12; i++)
             {
-
                 if (numeroEstampa.ToString() == dataGridView2[1, i].Value.ToString() && cantEstampas != 0)
                 {
                     dataGridView2[1, i].Style.BackColor = Color.Green;
                 }
             }
 
-            for (int i = 2; i < 35; i++)
+            for (int i = 2; i < 34; i++)
             {
                 for (int j = 0; j < 20; j++)
                 {
-                    if(numeroEstampa< 670)
+                    if (numeroEstampa.ToString() == dataGridView2[i, j].Value.ToString() && cantEstampas != 0)
                     {
-                        if (numeroEstampa.ToString() == dataGridView2[i, j].Value.ToString() && cantEstampas != 0)
-                        {
-                            dataGridView2[i, j].Style.BackColor = Color.Green;
-                            break;
-                        }
+                        dataGridView2[i, j].Style.BackColor = Color.Green;
+                        break;
                     }
-                    else
-                    {
-                        MessageBox.Show("Número de estampa equivocado", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                }
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (numeroEstampa.ToString() == dataGridView2[34, i].Value.ToString() && cantEstampas != 0)
+                {
+                    dataGridView2[34, i].Style.BackColor = Color.Green;
                 }
             }
         }
