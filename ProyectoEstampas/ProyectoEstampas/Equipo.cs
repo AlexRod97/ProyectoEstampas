@@ -8,8 +8,8 @@ namespace ProyectoEstampas
 {
    public class Equipo
     {
-        public int Escudo { get; set; }
-        public int Equipacion { get; set; }
-        public int Jugadores { get; set; }
+        public Estampa Escudo { get; set; } // Contiene las caracteristicas de la clase estampa
+        public Estampa Equipacion { get; set; }
+        public Estampa Jugadores { get; set; }
     }
 }
