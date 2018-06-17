@@ -20,7 +20,7 @@ namespace ProyectoEstampas
             InitializeComponent();
 
             dataGridView2.RowHeadersVisible = false;
-            dataGridView2.RowCount = 19;
+            dataGridView2.RowCount = 20;
 
             for (int i = 0; i < 8; i++)
             {
@@ -36,7 +36,7 @@ namespace ProyectoEstampas
 
             for (int i = 2; i < 34; i++)
             {
-                for (int j = 0; j < 19; j++)
+                for (int j = 0; j < 20; j++)
                 {
                     dataGridView2[i, j].Value = count;
                     count++;
