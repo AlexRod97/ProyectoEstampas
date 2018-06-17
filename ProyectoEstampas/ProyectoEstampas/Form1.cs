@@ -149,6 +149,8 @@ namespace ProyectoEstampas
                         MessageBox.Show("No ingreso el formato correcto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+
+                textBox2.Clear();
             }
             catch(Exception)
             {
@@ -199,6 +201,7 @@ namespace ProyectoEstampas
                         MessageBox.Show("No ingreso el formato correcto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+                textBox2.Clear();
             }
             catch (Exception)
             {
@@ -240,6 +243,7 @@ namespace ProyectoEstampas
                     album.TryGetValue(int.Parse(tbxBuscar.Text), out estampa);
                     MessageBox.Show("Queda(n): " + estampa.CantidadObtenida + " estampa(s) del número seleccionado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                tbxBuscar.Clear();
             }
             catch (Exception)
             {
