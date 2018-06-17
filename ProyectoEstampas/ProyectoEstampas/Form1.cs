@@ -18,6 +18,36 @@ namespace ProyectoEstampas
         public Form1()
         {
             InitializeComponent();
+
+            dataGridView2.RowHeadersVisible = false;
+            dataGridView2.RowCount = 19;
+
+            for (int i = 0; i < 8; i++)
+            {
+                dataGridView2[0, i].Value = i;
+            }
+
+            for (int i = 0; i < 12; i++)
+            {
+                dataGridView2[1, i].Value = i + 8;
+            }
+
+            int count = 20;
+
+            for (int i = 2; i < 34; i++)
+            {
+                for (int j = 0; j < 19; j++)
+                {
+                    dataGridView2[i, j].Value = count;
+                    count++;
+                }
+            }
+
+        }
+
+        public void UpdateForm()
+        {
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -66,12 +96,39 @@ namespace ProyectoEstampas
             if (BuscarEstampa(numero))
             {
                 added = album[numero];
-                added.CantidadObtenida = added.CantidadObtenida - 1;
+
+                if (added.CantidadObtenida == 0)
+                {
+
+                }
+                else
+                {
+                    added.CantidadObtenida = added.CantidadObtenida - 1;
+                }
+                
             }
             else
             {
                 album.Remove(numero);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (BuscarEstampa(int.Parse(tbxBuscar.Text)))
+                {
+                    Estampa estampa = new Estampa();
+                    album.TryGetValue(int.Parse(tbxBuscar.Text), out estampa);
+                    MessageBox.Show("Queda(n): " + estampa.CantidadObtenida + " estampas del número seleccionado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No ingreso el formato correcto","", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }
