@@ -203,12 +203,17 @@ namespace ProyectoEstampas
         private void button3_Click(object sender, EventArgs e)
         {
             StreamWriter Archivo = new StreamWriter("Archivo.txt");
+            foreach (var item in album)
+            {
+                Archivo.Write(item.Key + ",");
+            }
+            Archivo.Close();
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            StreamReader ArchivoLeer = new StreamReader("Archvo.txt");
+            StreamReader ArchivoLeer = new StreamReader("Archivo.txt");
             string linea = "";
             List<string> ListaDeLineas = new List<string>();
 
@@ -223,8 +228,15 @@ namespace ProyectoEstampas
             {
                 String[] Estampitas = item.Split(',');
                 foreach (string estampita in Estampitas)
-                    AgregarEstampa(Convert.ToInt32(estampita));
+                {
+                    if (estampita!="")
+                    {
+                        AgregarEstampa(Convert.ToInt32(estampita));
+                    }
+                }
+                    
             }
+            ArchivoLeer.Close();
         }
     }
 }
