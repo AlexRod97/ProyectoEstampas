@@ -12,8 +12,7 @@ using System.IO;
 namespace ProyectoEstampas
 {
     public partial class Form1 : Form
-    {
-       
+    {       
         SortedDictionary<int, Estampa> album = new SortedDictionary<int, Estampa>(); 
         List<int> InsertedNumbers = new List<int>(); 
         
@@ -73,14 +72,21 @@ namespace ProyectoEstampas
                 }
             }
 
-            for (int i = 2; i < 34; i++)
+            for (int i = 2; i < 35; i++)
             {
                 for (int j = 0; j < 20; j++)
                 {
-                    if (numeroEstampa.ToString() == dataGridView2[i, j].Value.ToString() && cantEstampas != 0)
+                    if(numeroEstampa< 670)
                     {
-                        dataGridView2[i, j].Style.BackColor = Color.Green;
-                        break;
+                        if (numeroEstampa.ToString() == dataGridView2[i, j].Value.ToString() && cantEstampas != 0)
+                        {
+                            dataGridView2[i, j].Style.BackColor = Color.Green;
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Número de estampa equivocado", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }
