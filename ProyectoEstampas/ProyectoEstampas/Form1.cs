@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ProyectoEstampas
 {
     public partial class Form1 : Form
     {
+       
         SortedDictionary<int, Estampa> album = new SortedDictionary<int, Estampa>(); 
         List<int> InsertedNumbers = new List<int>(); 
         
@@ -119,6 +121,7 @@ namespace ProyectoEstampas
             {
                 AgregarEstampa(Convert.ToInt32(textBox2.Lines.ElementAt(i)));                   
             }
+
         }
 
         private bool BuscarEstampa(int numero)
@@ -195,6 +198,33 @@ namespace ProyectoEstampas
                 MessageBox.Show("No ingreso el formato correcto","", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StreamWriter Archivo = new StreamWriter("Archivo.txt");
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            StreamReader ArchivoLeer = new StreamReader("Archvo.txt");
+            string linea = "";
+            List<string> ListaDeLineas = new List<string>();
+
+            while (linea != null)
+            {
+                linea = ArchivoLeer.ReadLine();
+                if (linea != null)
+                    ListaDeLineas.Add(linea);
+            }
+
+            foreach (var item in ListaDeLineas)
+            {
+                String[] Estampitas = item.Split(',');
+                foreach (string estampita in Estampitas)
+                    AgregarEstampa(Convert.ToInt32(estampita));
+            }
         }
     }
 }

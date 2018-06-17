@@ -108,6 +108,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -377,10 +380,11 @@
             this.dataGridViewTextBoxColumn33,
             this.dataGridViewTextBoxColumn34,
             this.dataGridViewTextBoxColumn35});
-            this.dataGridView2.Location = new System.Drawing.Point(-6, 0);
+            this.dataGridView2.Location = new System.Drawing.Point(-4, 0);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(902, 405);
+            this.dataGridView2.Size = new System.Drawing.Size(676, 329);
             this.dataGridView2.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -388,259 +392,261 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Primera Página";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 123;
+            this.dataGridViewTextBoxColumn1.Width = 95;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Estadios";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 91;
+            this.dataGridViewTextBoxColumn2.Width = 72;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.HeaderText = "Rusia";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 73;
+            this.dataGridViewTextBoxColumn3.Width = 59;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.HeaderText = "Arabia Saudita";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 119;
+            this.dataGridViewTextBoxColumn4.Width = 93;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.HeaderText = "Egipto";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 77;
+            this.dataGridViewTextBoxColumn5.Width = 62;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.HeaderText = "Uruguay";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 91;
+            this.dataGridViewTextBoxColumn6.Width = 72;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.HeaderText = "Portugal";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 90;
+            this.dataGridViewTextBoxColumn7.Width = 71;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.HeaderText = "España";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 85;
+            this.dataGridViewTextBoxColumn8.Width = 68;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.HeaderText = "Marruecos";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 104;
+            this.dataGridViewTextBoxColumn9.Width = 82;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.HeaderText = "Irán";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 61;
+            this.dataGridViewTextBoxColumn10.Width = 50;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.HeaderText = "Francia";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Width = 84;
+            this.dataGridViewTextBoxColumn11.Width = 67;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.HeaderText = "Australia";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 92;
+            this.dataGridViewTextBoxColumn12.Width = 72;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.HeaderText = "Perú";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            this.dataGridViewTextBoxColumn13.Width = 67;
+            this.dataGridViewTextBoxColumn13.Width = 54;
             // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.HeaderText = "Dinamarca";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 105;
+            this.dataGridViewTextBoxColumn14.Width = 83;
             // 
             // dataGridViewTextBoxColumn15
             // 
             this.dataGridViewTextBoxColumn15.HeaderText = "Argentina";
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 98;
+            this.dataGridViewTextBoxColumn15.Width = 77;
             // 
             // dataGridViewTextBoxColumn16
             // 
             this.dataGridViewTextBoxColumn16.HeaderText = "Islandia";
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            this.dataGridViewTextBoxColumn16.Width = 85;
+            this.dataGridViewTextBoxColumn16.Width = 68;
             // 
             // dataGridViewTextBoxColumn17
             // 
             this.dataGridViewTextBoxColumn17.HeaderText = "Croacia";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            this.dataGridViewTextBoxColumn17.Width = 85;
+            this.dataGridViewTextBoxColumn17.Width = 68;
             // 
             // dataGridViewTextBoxColumn18
             // 
             this.dataGridViewTextBoxColumn18.HeaderText = "Nigeria";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            this.dataGridViewTextBoxColumn18.Width = 82;
+            this.dataGridViewTextBoxColumn18.Width = 65;
             // 
             // dataGridViewTextBoxColumn19
             // 
             this.dataGridViewTextBoxColumn19.HeaderText = "Brasil";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            this.dataGridViewTextBoxColumn19.Width = 72;
+            this.dataGridViewTextBoxColumn19.Width = 57;
             // 
             // dataGridViewTextBoxColumn20
             // 
             this.dataGridViewTextBoxColumn20.HeaderText = "Suiza";
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.ReadOnly = true;
-            this.dataGridViewTextBoxColumn20.Width = 72;
+            this.dataGridViewTextBoxColumn20.Width = 58;
             // 
             // dataGridViewTextBoxColumn21
             // 
             this.dataGridViewTextBoxColumn21.HeaderText = "Costa Rica";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             this.dataGridViewTextBoxColumn21.ReadOnly = true;
-            this.dataGridViewTextBoxColumn21.Width = 97;
+            this.dataGridViewTextBoxColumn21.Width = 78;
             // 
             // dataGridViewTextBoxColumn22
             // 
             this.dataGridViewTextBoxColumn22.HeaderText = "Serbia";
             this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
             this.dataGridViewTextBoxColumn22.ReadOnly = true;
-            this.dataGridViewTextBoxColumn22.Width = 78;
+            this.dataGridViewTextBoxColumn22.Width = 62;
             // 
             // dataGridViewTextBoxColumn23
             // 
             this.dataGridViewTextBoxColumn23.HeaderText = "Alemania";
             this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
             this.dataGridViewTextBoxColumn23.ReadOnly = true;
-            this.dataGridViewTextBoxColumn23.Width = 95;
+            this.dataGridViewTextBoxColumn23.Width = 75;
             // 
             // dataGridViewTextBoxColumn24
             // 
             this.dataGridViewTextBoxColumn24.HeaderText = "México";
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             this.dataGridViewTextBoxColumn24.ReadOnly = true;
-            this.dataGridViewTextBoxColumn24.Width = 80;
+            this.dataGridViewTextBoxColumn24.Width = 66;
             // 
             // dataGridViewTextBoxColumn25
             // 
             this.dataGridViewTextBoxColumn25.HeaderText = "Suecia";
             this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
             this.dataGridViewTextBoxColumn25.ReadOnly = true;
-            this.dataGridViewTextBoxColumn25.Width = 80;
+            this.dataGridViewTextBoxColumn25.Width = 65;
             // 
             // dataGridViewTextBoxColumn26
             // 
             this.dataGridViewTextBoxColumn26.HeaderText = "Corea";
             this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
             this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            this.dataGridViewTextBoxColumn26.Width = 75;
+            this.dataGridViewTextBoxColumn26.Width = 60;
             // 
             // dataGridViewTextBoxColumn27
             // 
             this.dataGridViewTextBoxColumn27.HeaderText = "Bélgica";
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            this.dataGridViewTextBoxColumn27.Width = 83;
+            this.dataGridViewTextBoxColumn27.Width = 67;
             // 
             // dataGridViewTextBoxColumn28
             // 
             this.dataGridViewTextBoxColumn28.HeaderText = "Panamá";
             this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            this.dataGridViewTextBoxColumn28.Width = 89;
+            this.dataGridViewTextBoxColumn28.Width = 71;
             // 
             // dataGridViewTextBoxColumn29
             // 
             this.dataGridViewTextBoxColumn29.HeaderText = "Túnez";
             this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
             this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            this.dataGridViewTextBoxColumn29.Width = 77;
+            this.dataGridViewTextBoxColumn29.Width = 62;
             // 
             // dataGridViewTextBoxColumn30
             // 
             this.dataGridViewTextBoxColumn30.HeaderText = "Inglaterra";
             this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
             this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Width = 97;
+            this.dataGridViewTextBoxColumn30.Width = 76;
             // 
             // dataGridViewTextBoxColumn31
             // 
             this.dataGridViewTextBoxColumn31.HeaderText = "Polonia";
             this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
             this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            this.dataGridViewTextBoxColumn31.Width = 84;
+            this.dataGridViewTextBoxColumn31.Width = 67;
             // 
             // dataGridViewTextBoxColumn32
             // 
             this.dataGridViewTextBoxColumn32.HeaderText = "Senegal";
             this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
             this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            this.dataGridViewTextBoxColumn32.Width = 89;
+            this.dataGridViewTextBoxColumn32.Width = 71;
             // 
             // dataGridViewTextBoxColumn33
             // 
             this.dataGridViewTextBoxColumn33.HeaderText = "Colombia";
             this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
             this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Width = 95;
+            this.dataGridViewTextBoxColumn33.Width = 75;
             // 
             // dataGridViewTextBoxColumn34
             // 
             this.dataGridViewTextBoxColumn34.HeaderText = "Japón";
             this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
             this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            this.dataGridViewTextBoxColumn34.Width = 76;
+            this.dataGridViewTextBoxColumn34.Width = 61;
             // 
             // dataGridViewTextBoxColumn35
             // 
             this.dataGridViewTextBoxColumn35.HeaderText = "Legendarias";
             this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
             this.dataGridViewTextBoxColumn35.ReadOnly = true;
-            this.dataGridViewTextBoxColumn35.Width = 116;
+            this.dataGridViewTextBoxColumn35.Width = 90;
             // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(84, 438);
+            this.textBox2.Location = new System.Drawing.Point(63, 356);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 170);
+            this.textBox2.Size = new System.Drawing.Size(137, 139);
             this.textBox2.TabIndex = 2;
             // 
             // Eliminar
             // 
             this.Eliminar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Eliminar.Location = new System.Drawing.Point(271, 438);
+            this.Eliminar.Location = new System.Drawing.Point(203, 356);
+            this.Eliminar.Margin = new System.Windows.Forms.Padding(2);
             this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Size = new System.Drawing.Size(94, 27);
+            this.Eliminar.Size = new System.Drawing.Size(70, 22);
             this.Eliminar.TabIndex = 3;
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.UseVisualStyleBackColor = true;
@@ -651,9 +657,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 418);
+            this.label1.Location = new System.Drawing.Point(61, 340);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Eliminar";
             // 
@@ -661,9 +668,10 @@
             // 
             this.tbxBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbxBuscar.Location = new System.Drawing.Point(554, 449);
+            this.tbxBuscar.Location = new System.Drawing.Point(416, 365);
+            this.tbxBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.tbxBuscar.Name = "tbxBuscar";
-            this.tbxBuscar.Size = new System.Drawing.Size(158, 22);
+            this.tbxBuscar.Size = new System.Drawing.Size(120, 20);
             this.tbxBuscar.TabIndex = 5;
             // 
             // label2
@@ -671,9 +679,10 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(551, 429);
+            this.label2.Location = new System.Drawing.Point(413, 349);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 17);
+            this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Buscar:";
             // 
@@ -681,9 +690,10 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(718, 444);
+            this.button1.Location = new System.Drawing.Point(538, 361);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 27);
+            this.button1.Size = new System.Drawing.Size(122, 22);
             this.button1.TabIndex = 7;
             this.button1.Text = "Buscar Estampa";
             this.button1.UseVisualStyleBackColor = true;
@@ -691,20 +701,53 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(271, 581);
+            this.button2.Location = new System.Drawing.Point(203, 472);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 27);
+            this.button2.Size = new System.Drawing.Size(70, 22);
             this.button2.TabIndex = 8;
             this.button2.Text = "Insertar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(355, 472);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(126, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Exportar Datos";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(496, 472);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(152, 23);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "Importar Datos";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(403, 443);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Guardar estampas o refrescar tabla";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(893, 620);
+            this.ClientSize = new System.Drawing.Size(670, 504);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -713,6 +756,7 @@
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dataGridView2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Control de estampas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -803,6 +847,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
     }
 }
 
