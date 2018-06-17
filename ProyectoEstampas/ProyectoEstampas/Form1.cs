@@ -38,13 +38,16 @@ namespace ProyectoEstampas
 
             int count = 20;
 
-            for (int i = 2; i < 34; i++)
+            for (int i = 2; i < 35; i++)
             {
                 for (int j = 0; j < 20; j++)
                 {
-                    dataGridView2[i, j].Value = count;
-                    dataGridView2[i, j].Style.BackColor = Color.Red;
-                    count++;
+                    if (count < 670)
+                    {
+                        dataGridView2[i, j].Value = count;
+                        dataGridView2[i, j].Style.BackColor = Color.Red;
+                        count++;
+                    }
                 }
             }
 
@@ -190,7 +193,7 @@ namespace ProyectoEstampas
                 {
                     Estampa estampa = new Estampa();
                     album.TryGetValue(int.Parse(tbxBuscar.Text), out estampa);
-                    MessageBox.Show("Queda(n): " + estampa.CantidadObtenida + " estampas del número seleccionado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Queda(n): " + estampa.CantidadObtenida + " estampa(s) del número seleccionado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception)
