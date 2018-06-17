@@ -133,12 +133,27 @@ namespace ProyectoEstampas
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {          
-            for (int i = 0; i < textBox2.Lines.Count(); i++)
+        {
+            try
             {
-                AgregarEstampa(Convert.ToInt32(textBox2.Lines.ElementAt(i)));                   
-            }
+                for (int i = 0; i < textBox2.Lines.Count(); i++)
+                {
+                    int numeroEstampa = Convert.ToInt32(textBox2.Lines.ElementAt(i));
 
+                    if (numeroEstampa > 0 && numeroEstampa <= 669)
+                    {
+                        AgregarEstampa(numeroEstampa);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No ingreso el formato correcto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("No ingreso el formato correcto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private bool BuscarEstampa(int numero)
@@ -168,10 +183,26 @@ namespace ProyectoEstampas
         }
 
         private void Eliminar_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < textBox2.Lines.Count(); i++)
+        {           
+            try
             {
-                EliminarEstampa(Convert.ToInt32(textBox2.Lines.ElementAt(i)));
+                for (int i = 0; i < textBox2.Lines.Count(); i++)
+                {
+                    int numeroEstampa = Convert.ToInt32(textBox2.Lines.ElementAt(i));
+
+                    if (numeroEstampa > 0 && numeroEstampa <= 669)
+                    {
+                        EliminarEstampa(numeroEstampa);
+                    }
+                    else
+                    {
+                        MessageBox.Show("No ingreso el formato correcto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No ingreso el formato correcto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -222,7 +253,10 @@ namespace ProyectoEstampas
             StreamWriter Archivo = new StreamWriter("Archivo.txt");
             foreach (var item in album)
             {
-                Archivo.Write(item.Key + ",");
+                for (int i = 0; i < item.Value.CantidadObtenida; i++)
+                {
+                    Archivo.Write(item.Key + ",");
+                }                
             }
             Archivo.Close();
 
